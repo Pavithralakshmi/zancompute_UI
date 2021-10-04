@@ -1,0 +1,74 @@
+body{
+  background: whitesmoke;
+}
+mat-toolbar{
+  background: white;
+  color: cornflowerblue;
+}
+mat-menu-content,mat-sidenav{
+  width: 200px;
+  border-right: none;
+  background: white;
+  color: cornflowerblue;
+  text-align: left;
+}
+.container{
+  height:calc(100vh - 98px);
+  margin: 16px;
+  margin-left: 32px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+  color: lightgrey;
+  border-radius: 10px;
+}
+mat-sidenav-container{
+  height: calc(100vh - 65px);
+}
+.mat-button{
+  line-height: 45px;
+}
+.active_menu{
+  font-size: 1rem;
+  font-weight: lighter;
+}
+.menu_list{
+  margin: 5px;
+  vertical-align: middle;
+}
+.example-small-box, .example-large-box {
+  margin: 16px;
+  padding: 16px;
+  border-radius: 8px;
+}
+
+.example-small-box {
+  height: 100px;
+  width: 100px;
+}
+
+.example-large-box {
+  height: 300px;
+  width: 300px;
+  background: white;
+}
+
+.theame_box{
+  margin: auto;
+  margin-top: 10%;
+  min-width: min-content;
+  max-width: max-content;
+}
+.mat-tab-group {
+  display: flex;
+  flex-direction: column;
+  max-width: 100%;
+  width: max-content;
+}
+.mat-form-field {
+  display: inline-block;
+  position: relative;
+  text-align: left;
+  width: -webkit-fill-available;
+}

@@ -1,0 +1,120 @@
+<mat-toolbar>
+  <button mat-icon-button *ngIf="sidenav.mode === 'over'" [matMenuTriggerFor]="menu" >
+<mat-icon *ngIf="!sidenav.opened">menu</mat-icon>
+    <mat-icon *ngIf="sidenav.opened">close</mat-icon>
+  </button>
+  <img
+    width="100"
+    alt="Zan Compute Logo"
+    src="assets/images/Zan_Compute_Logo.jpg"
+  />
+  <span class="active_menu">Settings</span>
+  <div class="spacer"></div>
+</mat-toolbar>
+<mat-sidenav-container>
+  <mat-sidenav  #sidenav="matSidenav">
+    <button mat-button class="menu-button">
+      <mat-icon>home</mat-icon>
+      <span class="menu_list">Home</span>
+    </button>
+    <mat-divider></mat-divider>
+    <button mat-button class="menu-button">
+      <mat-icon>reports</mat-icon>
+      <span class="menu_list">Report</span>
+    </button>
+    <mat-divider></mat-divider>
+    <button mat-button class="menu-button">
+      <mat-icon>notifications</mat-icon>
+      <span class="menu_list">Notification</span>
+    </button>
+    <mat-divider></mat-divider>
+    <button mat-button class="menu-button">
+      <mat-icon>settings</mat-icon>
+      <span class="menu_list"><a href="\theame">Setting</a></span>
+    </button>
+    <mat-divider></mat-divider>
+  </mat-sidenav>
+    <mat-sidenav-content>
+        <div class="theame_box content mat-elevation-z4">
+          <mat-tab-group dynamicHeight>
+            <mat-tab label="Create Theme">
+              <div class="mat-elevation-z4">
+                <div class="example-button-row" style="text-align: right;margin-top: 8px;">
+                  <button mat-stroked-button color="danger">
+                    <mat-icon>add</mat-icon>
+                  </button>
+                  <button mat-stroked-button color="danger">
+                    <mat-icon>edit</mat-icon>
+                  </button>
+                  <button mat-stroked-button color="warn">
+                    <mat-icon>delete</mat-icon>
+                  </button>
+                </div>
+                <div class="example-large-box mat-elevation-z4">
+                  <mat-radio-group
+                    aria-labelledby="example-radio-group-label"
+                    class="example-radio-group">
+                    <mat-radio-button class="example-radio-button" checked>
+                      Theme 1
+                    </mat-radio-button>
+                  </mat-radio-group>
+                </div>
+              </div>
+            </mat-tab>
+            <mat-tab label="Theme 1">
+              <div class="example-button-row" style="text-align: right;margin-top: 8px;">
+                <button mat-stroked-button color="danger">
+                  <mat-icon>add</mat-icon>
+                </button>
+                  <button mat-stroked-button color="danger">
+                  <mat-icon>edit</mat-icon>
+                </button>
+                <button mat-stroked-button color="warn">
+                  <mat-icon>delete</mat-icon>
+                </button>
+              </div>
+              <div class="example-large-box mat-elevation-z4">
+                <form class="example-form">
+                  <mat-form-field class="example-full-width" appearance="fill">
+                    <input matInput value="New">
+                  </mat-form-field>
+                  <mat-form-field class="example-full-width" appearance="fill">
+                    <input matInput value="Urlinals">
+                  </mat-form-field>
+                  <mat-form-field class="example-full-width" appearance="fill">
+                    <input matInput value="Slink">
+                  </mat-form-field>
+                  <mat-form-field class="example-full-width" appearance="fill">
+                    <input matInput value="Floor">
+                  </mat-form-field>
+                </form>
+              </div>
+            </mat-tab>
+          </mat-tab-group>
+        </div>
+    </mat-sidenav-content>
+</mat-sidenav-container>
+
+<mat-menu #menu="matMenu">
+  <button mat-button class="menu-button">
+    <mat-icon>home</mat-icon>
+    <span class="menu_list">Home</span>
+  </button>
+  <mat-divider></mat-divider>
+  <button mat-button class="menu-button">
+    <mat-icon>reports</mat-icon>
+    <span class="menu_list">Report</span>
+  </button>
+  <mat-divider></mat-divider>
+  <button mat-button class="menu-button">
+    <mat-icon>notifications</mat-icon>
+    <span class="menu_list">Notification</span>
+  </button>
+  <mat-divider></mat-divider>
+  <button mat-button class="menu-button">
+    <mat-icon>settings</mat-icon>
+    <span class="menu_list"><a href="\theame">Setting</a></span>
+  </button>
+  <mat-divider></mat-divider>
+</mat-menu>
+
